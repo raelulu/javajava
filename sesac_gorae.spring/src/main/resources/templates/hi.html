@@ -6,5 +6,11 @@
 </head>
 <body>
   <h1 th:text="${msg}">HI</h1>
+  <br>
+  <p th:utext="${utext}">p태그</p>
+  <br>
+  <span th:with="msg2='안녕? ' + ${msg}" th:text="${msg2}"></span>
+  <br>
+  <p th:if="${age}<20" th:text=" ${age} + '세는 미성년자입니다.'">p태그</p>
 </body>
 </html>
